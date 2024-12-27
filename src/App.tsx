@@ -1,14 +1,17 @@
 import './App.css';
+import AddTaskForm from './components/AddTaskForm/AddTaskForm.tsx';
 
 const App = () => {
 
 
+
   return (
     <>
+      <AddTaskForm/>
 
-       hello
+
     </>
   );
 };
 
-export default App
+export default App;
