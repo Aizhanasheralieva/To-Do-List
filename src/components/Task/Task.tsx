@@ -1,9 +1,14 @@
+import React from 'react';
 
-const Task = () => {
+interface Props {
+  task: { id: string; text: string };
+  deleteTask: (id: string) => void;
+}
+const Task: React.FC<Props> = ({ task, deleteTask }) => {
   return (
     <li className="taskList">
-      <button >Delete</button>
-
+      {task.text}
+      <button onClick={() => deleteTask(task.id)}>Delete</button>
     </li>
   );
 };
